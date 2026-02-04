@@ -123,8 +123,8 @@ jobs:
         git clone ${{ secrets.PATCH_REPO }}
         export ANDROID_NDK_ROOT=${{ steps.setup-ndk.outputs.ndk-path }}
         git clone --recurse-submodules --branch 15.1.14 https://github.com/frida/frida
-        cd frida/subprojects/frida-core
-        git am ../../../Patchs/strongR-frida/frida-core/*.patch
+        cd frida/frida-core
+        git am ../../Patchs/strongR-frida/frida-core/*.patch
     - name: two step patch   
       shell: bash
       run: |
