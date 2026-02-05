@@ -129,7 +129,7 @@ jobs:
       shell: bash
       run: |
         cd frida/frida-gum/gum
-        git am ../../../../Patchs/strongR-frida/frida-gum/*.patch
+        git am ../../../Patchs/strongR-frida/frida-gum/*.patch
         cd ../../../
         
     - name: Configure
